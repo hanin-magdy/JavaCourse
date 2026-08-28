@@ -3,8 +3,9 @@ package day4;
 public class Rectangle {
     // 2 fields,properites,attributes
 
-    private double length;
-    private double width;
+    protected double length;
+    protected double width;
+    protected int sides = 4;
     private static int counter;
 
     public static int getCounter() {
@@ -56,7 +57,7 @@ public class Rectangle {
        //return area;
        return length*width;
     }
-    double calculatePerimeter(){
+    public double calculatePerimeter(){
         double perimeter = length*2+width*2;
         return perimeter;
     }
